@@ -1,0 +1,67 @@
+header {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  height: 110px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+  padding: var(--ms3) var(--ms5);
+  place-items: center;
+
+  .logo-app img {
+    width: 93px;
+    height: 25px;
+    margin-right: var(--ms6);
+    margin-bottom: 20px;
+  }
+  #menu-header {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    li {
+      margin-left: var(--ms5);
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: var(--colorSecondary);
+        }
+      }
+    }
+  }
+  #searchBar {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    input {
+      height: 30px;
+      width: 80%;
+      background-color: initial;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+      &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0;
+      }
+      @media (min-width: 1440px) {
+        width: 20%;
+      }
+    }
+    @media (min-width: 1024px) {
+      place-content: flex-end;
+    }
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    height: 70px;
+    padding: var(--ms3) 60px;
+  }
+}

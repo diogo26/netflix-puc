@@ -1,0 +1,12 @@
+.containerInfoMovie {
+  margin-bottom: var(--ms5);
+  .containerInfoMovie_info {
+    font-size: 24px;
+    margin: var(--ms4) auto;
+  }
+}
+@media (max-width: 768px) {
+  a.backHome {
+    width: initial;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>DiogoFlix</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="description" content="Filmes e videos via streaming" />
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Diogo Alves de Oliveira SIlva" />
+    <meta name="keywords" content="HTML, CSS" />
+    <link href="URL" rel="canonical" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/glider.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-app">
+        <a href="index.html">
+          <img src="https://i.ibb.co/r5krrdz/logo.png" />
+        </a>
+      </div>
+      <ul id="menu-header">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li><a href="popular.html">Filmes populares</a></li>
+        <li>
+          <a href="https://www.themoviedb.org/tv/on-the-air" target="_blank"
+            >Na TV</a
+          >
+        </li>
+      </ul>
+      <div id="searchBar">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Pesquisar filmes..."
+          onkeypress="return searchMovie(event)"
+        />
+      </div>
+    </header>
+    <div class="container">
+      <div class="listGridAllMovies" id="listGridAllMovies"></div>
+    </div>
+  </body>
+  <footer>
+    <script src="script/search.js"></script>
+    <script type="module" src="script/utils.js"></script>
+    <script src="plugins/glider.js"></script>
+  </footer>
+</html>

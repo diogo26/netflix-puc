@@ -1,0 +1,44 @@
+#highlight {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  color: white;
+
+  padding: var(--ms3) 10px;
+  h1 {
+    font-size: 2.375em;
+    margin-bottom: 70px;
+    @media (min-width: 768px) {
+      font-size: 4.375em;
+    }
+  }
+  .containerInfoMovie {
+    display: flex;
+    flex-direction: column;
+    .highlight_summaryMovie {
+      display: flex;
+      justify-content: flex-end;
+      font-size: var(--ms6);
+      max-height: 463px;
+      overflow: auto;
+      margin-top: 15px;
+    }
+    @media (min-width: 1024px) {
+      padding: var(--ms3) 60px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+    }
+    @media (max-width: 768px) {
+      .highlight_summaryMovie {
+        display: none;
+      }
+      #viewDetails {
+        width: inherit;
+      }
+    }
+  }
+}
